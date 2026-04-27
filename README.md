@@ -26,3 +26,13 @@ Workflow execution via email commands
 Customer support automation
 Integration with AI/LLM-powered agents
 Foundation for building Agentic AI applications
+
+How to Install:
+Do npm install in the directory
+Set .env file with following values:
+EMAIL_ACCOUNT=your_email@gmail.com
+PASSWORD=your_app_password
+RECIPIENT=receiver@gmail.com
+OPENAI_API_KEY=sk-xxxxxxxxxxxx
+
+Start the server as node emailServer.js
