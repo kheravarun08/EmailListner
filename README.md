@@ -1,45 +1,45 @@
-# 📧 Email Listener Application
+# 📧 AI Email Agent (Node.js)
 
-This project is a Node.js-based Email Listener application that monitors an inbox, processes incoming emails, and enables automation workflows.
+A **Node.js-based AI Email Listener** that reads incoming emails, understands intent using an LLM, and automatically generates intelligent responses including summaries, reports, and charts.
 
 ---
 
 ## 🚀 Features
 
-- Listens to a configured email inbox in real-time  
-- Detects and processes newly received emails  
-- Extracts key email data:
-  - Subject  
-  - Body  
-  - Sender (From)  
-  - Recipient (To)  
-- Identifies and retrieves the latest email from the inbox  
-- Integrates with APIs and LLMs for intelligent processing  
-- Sends automated responses back to the sender  
+- 📥 Listens to an email inbox in real-time  
+- 🧠 Uses AI to interpret email content  
+- 📊 Generates:
+  - Summary  
+  - HTML report (table)  
+  - Charts (bar / pie / histogram)  
+- 🖼 Converts charts (SVG → PNG) for email compatibility  
+- 📧 Sends automated responses  
+- ⚡ Built as a foundation for **Agentic AI workflows**
 
 ---
 
-## ⚙️ How It Works
+## 🧠 How It Works
 
-1. The server starts and connects to a specified email inbox  
-2. It continuously listens for new incoming emails  
-3. When a new email is received:
-   - Extracts relevant details (subject, body, sender, recipient)  
-   - Treats the email body as an input/query  
-   - Sends the query to an API interacting with an LLM  
-   - The LLM processes the request step-by-step  
-   - Generates a final response  
-   - Sends the response back via email  
+1. The app connects to an email inbox using IMAP  
+2. Continuously listens for new emails  
+3. When a new email arrives:
+   - Extracts subject, body, sender details  
+   - Treats the email body as a query  
+4. The AI Agent:
+   - Breaks the task into steps  
+   - Calls tools (summarize, report, chart)  
+   - Decides the final response  
+5. Generates an HTML email with insights  
+6. Sends reply via SMTP  
+
 
 ---
+## Generate .env File with this data
 
-## 💡 Use Cases
-
-- Email-based automation systems  
-- Workflow execution via email commands  
-- Customer support automation  
-- Integration with AI/LLM-powered agents  
-- Foundation for building Agentic AI applications  
+- EMAIL_ACCOUNT=your_email@gmail.com
+- PASSWORD=your_app_password
+- RECIPIENT=receiver@gmail.com
+- OPENAI_API_KEY=sk-xxxxxxxxxxxx
 
 ---
 
