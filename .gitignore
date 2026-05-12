@@ -1,0 +1,34 @@
+# Node modules
+node_modules/
+
+# Build folders
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+
+# Logs
+*.log
+
+# macOS files
+.DS_Store
+
+# VS Code settings
+.vscode/
+
+# Android
+android/.gradle/
+android/app/build/
+
+# iOS
+ios/build/
+DerivedData/
+
+# Coverage
+coverage/
+
+# Temporary files
+*.tmp
+*.swp
