@@ -12,7 +12,7 @@ export async function runAgent(emailText) {
     const decision = await decideNextStep(context);
     if (decision.action === "sendEmail") {
       if (!decision.input?.html) {
-        console.log("❌ Missing html, forcing recompute");
+        console.log("❌ Missing html, forcing recompute with updated context");
         break; // or continue (explained below)
       }
     }
